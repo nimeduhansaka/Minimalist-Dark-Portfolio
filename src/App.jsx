@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Work from './components/Work';
+import SnakeAnimation from './components/SnakeAnimation';
 import Contact from './components/Contact';
 
 function App() {
@@ -87,6 +88,9 @@ function App() {
                 <Hero />
                 <About />
                 <Work />
+
+                <SnakeAnimation />
+                
                 <Contact />
             </main>
         </div>
