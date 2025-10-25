@@ -5,7 +5,17 @@ It highlights my projects, skills, and experience through a smooth, clean, and e
 
 ## React Compiler
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+🖤 Dark & Modern UI — Elegant design focused on readability and simplicity.
+
+⚡ Responsive Layout — Seamlessly adapts to all devices.
+
+🎨 Minimalist Design — Every element has a purpose.
+
+🎞️ Smooth Animations — Enhances interactivity without clutter.
+
+📄 Downloadable CV — Easy access to resume.
+
+🌐 SEO Ready — Optimized for better online visibility.
 
 ## Expanding the ESLint configuration
 
