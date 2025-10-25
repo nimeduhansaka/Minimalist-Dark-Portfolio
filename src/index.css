@@ -253,17 +253,18 @@ body{ background: #000 }
     from {margin-top: 15%;}
     to {margin-top: 50%;}
 }
-@keyframes scroll-inner {
-    from {margin-top: 15%;}
-    to {margin-top: 50%;}
+ @keyframes scroll-inner {
+  0%   { transform: translateY(0);   opacity: 1; }
+  60%  { transform: translateY(14px); opacity: 0; }
+  100% { transform: translateY(14px); opacity: 0; }
 }
 @-webkit-keyframes scroll-mouse {
     from {margin-top: 0;}
     to {margin-top: 15px;}
 }
 @keyframes scroll-mouse {
-    from {margin-top: 0;}
-    to {margin-top: 15px;}
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(4px); }
 }
 
 div.mouse-container{
@@ -305,4 +306,5 @@ div.mouse{
     animation-timing-function:ease
       
   }
+  
 }
