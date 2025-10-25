@@ -1,8 +1,8 @@
 
-export default function Preloader() {
+export default function Preloader({ hide = false }) {
   return (
 
-    <div className="preloader">
+     <div className={`preloader ${hide ? 'preloader--hide' : ''}`}>
       <div className="loader-wrapper">
         <span className="loader-letter">H</span>
         <span className="loader-letter">E</span>
@@ -13,6 +13,6 @@ export default function Preloader() {
         <div className="loader" />
       </div>
     </div>
-    
+
   );
 }
