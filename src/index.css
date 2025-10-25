@@ -111,6 +111,14 @@
   cursor: none !important;
 }
 
+html, body, #root,
+a, a:hover, a:focus,
+button, [role="button"],
+input, select, textarea, label,
+svg, path, * {
+  cursor: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }

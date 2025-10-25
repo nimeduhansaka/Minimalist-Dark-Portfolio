@@ -79,7 +79,6 @@ function App() {
 
     return (
         <>
-        {/* {loading && <Preloader hide={exiting} />} */}
 
         <div className="bg-black text-white cursor-none">
             <CustomCursor />
