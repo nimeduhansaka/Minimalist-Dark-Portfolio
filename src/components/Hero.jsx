@@ -1,16 +1,38 @@
 import { ArrowDown, Download } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 import profileImg from '../assets/profile.jpg';
 import cvFile from '../assets/Nimedu-Hansaka-CV.pdf';
 
 export default function Hero() {
+    
+    // const scrollToAbout = () => {
+    //     const element = document.getElementById('about');
+    //     element?.scrollIntoView({ behavior: 'smooth' });
+    // };
+
+    const [showIndicator, setShowIndicator] = useState(true);
+    const heroRef = useRef(null);
+
     const scrollToAbout = () => {
         const element = document.getElementById('about');
         element?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    useEffect(() => {
+        const el = heroRef.current;
+        if (!el) return;
+        const io = new IntersectionObserver(
+        ([entry]) => setShowIndicator(entry.isIntersecting && entry.intersectionRatio > 0.6),
+        { threshold: [0, 0.6, 1] }
+        );
+        io.observe(el);
+        return () => io.disconnect();
+    }, []);
+
     return (
         <section
             id="home"
+            ref={heroRef}
             className="min-h-screen flex items-center justify-center relative"
         >
             <div className="container mx-auto px-6">
@@ -95,11 +117,14 @@ export default function Hero() {
                 <ArrowDown size={32} className="text-gray-400" />
             </button> */}
 
+    {showIndicator && (
         <div class='mouse-container'>
         <div class='mouse'>
             <button class='scroll-down' onClick={scrollToAbout}></button>
         </div>
         </div>
+    )}
+
 
         </section>
     );
