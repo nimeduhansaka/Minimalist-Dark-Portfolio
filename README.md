@@ -1,16 +1,26 @@
-# React + Vite
+# About
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my main personal portfolio website, designed with a minimalist dark aesthetic to reflect a modern and professional look.
+It highlights my projects, skills, and experience through a smooth, clean, and engaging user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🖤 Dark & Modern UI — Elegant design focused on readability and simplicity.
 
-## React Compiler
+⚡ Responsive Layout — Seamlessly adapts to all devices.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+🎨 Minimalist Design — Every element has a purpose.
 
-## Expanding the ESLint configuration
+🎞️ Smooth Animations — Enhances interactivity without clutter.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📄 Downloadable CV — Easy access to resume.
+
+🌐 SEO Ready — Optimized for better online visibility.
+
+## Tech Stack
+
+HTML5, CSS3, JavaScript, React.js, vite, Tailwind CSS
+
+Responsive design using Flexbox & Grid
+
+Deployed via GitHub Pages 
