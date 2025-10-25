@@ -77,20 +77,25 @@ export default function Hero() {
 
                     {/* Download CV button */}
                     <div className="overflow-hidden">
-                        <div className="animate-slide-up animation-delay-400">
-                            <a
+                    <div className="animate-slide-up animation-delay-400">
+                        
+                        <div className="group relative inline-block overflow-hidden">
+                        <div className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                        <a
                             href={cvFile}
                             download="Nimedu-Hansaka-CV.pdf"
-                            className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 hover:border-white/40 hover:bg-white hover:text-black transition-colors"
+                            className="relative z-10 inline-flex items-center gap-2 px-6 py-3 border border-white/30 transition-colors duration-300 group-hover:text-black"
                             aria-label="Download CV"
-                            >
-                            <Download size={18} />
+                        >
+                            <Download size={18} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                             <span>Download CV</span>
-                            </a>
+                        </a>
                         </div>
-                    </div>
 
                     </div>
+                    </div>
+
+                </div>
 
                     
 
